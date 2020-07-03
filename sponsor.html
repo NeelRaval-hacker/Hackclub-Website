@@ -1,0 +1,332 @@
+<html>
+
+<head>
+    <!-- Sentry Error Monitoring -->
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/NMoy4HgGiLr5NAQaEQa2ho8X/recaptcha__en.js"></script>
+    <script src="https://browser.sentry-cdn.com/5.14.1/bundle.min.js"
+        integrity="sha384-uNLty2kYRXkczv6MLytto1fP/VzNBKjYpUNIpNa3yvW0CYZrzJE4TyvUBDHtbMmq"
+        crossorigin="anonymous"></script>
+    <script>
+        Sentry.init({
+            dsn: 'https://49be4fdd0db3435884b9a5c33b20f5ab@sentry.io/2836115'
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-158603824-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158603824-3');
+    </script>
+
+    <link rel="shortcut icon" href="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/favicon.ico">
+
+    <link rel="stylesheet" href="./css/sponsor/sponsor.css">
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google Fonts: Muli -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&amp;display=swap" rel="stylesheet">
+
+    <!-- For responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- reCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf1RNIUAAAAAI-VzP0tQ0BF8ckTpUw1F5ZUDOy7"></script>
+    <style></style>
+
+    <title>Sponsor</title>
+    <script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js"></script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <!-- Splash (top 100vh of page) -->
+    <div id="splash">
+        <a href="/"><img id="logo"
+                src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/logo.png"></a>
+
+        <!-- Responsive navbar -->
+        <div id="topnav" class="inverted">
+            <div class="nav-page">
+                <a href="/" class="page">Home</a>
+                <div class="nav-indicator"></div>
+            </div>
+            <div class="nav-page">
+                <a href="/hackathon" class="page">Hackathon</a>
+                <div class="nav-indicator"></div>
+            </div>
+            <div class="nav-page">
+                <a href="/cubstart" class="page">Cubstart</a>
+                <div class="nav-indicator"></div>
+            </div>
+            <div class="nav-page">
+                <a href="/fellowship" class="page">Fellowship</a>
+                <div class="nav-indicator"></div>
+            </div>
+            <div class="nav-page">
+                <a href="/sponsor" class="page active">Sponsor Us</a>
+                <div class="nav-indicator active"></div>
+            </div>
+            <div class="nav-page">
+                <a href="/contact" class="page">Contact</a>
+                <div class="nav-indicator"></div>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <!-- Top Bar -->
+        <div id="mobile-bar" class="white"></div>
+
+        <!-- MLH Badge -->
+        <a id="mlh-trust-badge"
+            style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+            href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2020-season&amp;utm_content=white"
+            target="_blank" rel="noopener noreferrer"><img
+                src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg"
+                alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+
+        <!-- Splash body -->
+        <div id="splash-body">
+            <div id="splash-content">
+                <h1>Make Cal Hacks your event.</h1>
+
+                <div class="splash-section">
+                    <h4>Establish your brand!</h4>
+                    <p>
+                        Cal Hacks is the perfect way to establish your brand and build and
+                        grow awareness for your company among thousands of talented
+                        engineers.
+                    </p>
+                </div>
+                <div class="splash-section">
+                    <h4>Connect with top candidates!</h4>
+                    <p>
+                        We can provide you everything you need to find top talent in the
+                        tech and hacker community.
+                    </p>
+                </div>
+                <div class="splash-section">
+                    <h4>Show off your tech!</h4>
+                    <p>
+                        Cal Hacks is the largest collegiate hackathon, the best place to
+                        display your tech and see hackers use your APIs in creative and
+                        innovative ways.
+                    </p>
+                </div>
+            </div>
+            <div id="splash-form">
+                <h3>Let's get in touch!</h3>
+                <input id="name-input" placeholder="Full Name">
+                <input id="company-input" placeholder="Company">
+                <input id="sender-input" placeholder="Email">
+                <textarea id="content-input" class="long" placeholder="Inquiry" rows="5"></textarea>
+                <button id="submit-input" class="dark noshadow" onclick="contact()">
+                    Send!
+                </button>
+                <h4 id="contact-confirmation" class="hide">
+                    Thanks for reaching out! We'll be in touch shortly :)
+                </h4>
+            </div>
+        </div>
+
+        <!-- Down indicator -->
+        <i id="down-indicator" class="material-icons" onclick="scrollToContent();">
+            keyboard_arrow_down
+        </i>
+    </div>
+    <div id="content">
+        <div id="stats" class="content-section">
+            <div class="section-indicator"></div>
+            <h2>6.0 Stats</h2>
+            <div id="stats-content" class="content">
+                <div id="applicants">
+                    <h1>4500+</h1>
+                    <h4>Applicants</h4>
+                </div>
+                <div id="attendees">
+                    <h1>2200+</h1>
+                    <h4>Attendees</h4>
+                </div>
+                <div id="memories">
+                    <h1>countless</h1>
+                    <h4>Memories</h4>
+                </div>
+                <div id="schools">
+                    <h1>150+</h1>
+                    <h4>Schools</h4>
+                </div>
+                <div id="sponsors">
+                    <h1>37</h1>
+                    <h4>Sponsors</h4>
+                </div>
+                <div id="beginners">
+                    <h1>500+</h1>
+                    <h4>Beginners</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonials" class="content-section">
+            <div class="section-indicator"></div>
+            <h2>Testimonials</h2>
+            <div id="testimonials-body">
+                <div class="testimonial">
+                    <img src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/images/cal_hacks_1.jpg">
+                    <p>
+                        “Our booth was swarmed with students interested in both full-time
+                        and internship opportunities... We ran out of nearly all the swag
+                        we brought with us ... even my stack of business cards... As a
+                        recruiter, this was a dream opportunity: getting to chat with
+                        hundreds of energetic, passionate sutdents...” <br><br>
+                        — rideOS
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <img src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/images/cal_hacks_2.jpg">
+                    <p>
+                        “Cal Hacks 6.0 blew me away... We were astounded by both the
+                        creativity and resolve demonstrated at Cal Hacks. We wish we could
+                        have given all of our integrations an award.” <br><br>
+                        — DocuSign
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="past" class="content-section">
+            <div class="section-indicator"></div>
+            <h2>Cal Hacks 6.0 Sponsors</h2>
+            <img src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/images/ch_6_sponsor_grid_blue.png">
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-content">
+            <img id="footer-logo"
+                src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/cal_hacks_outline.png">
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <a href="/">Home</a>
+                    <a href="/hackathon">Hackathon</a>
+                    <a href="/cubstart">Cubstart</a>
+                    <a href="/fellowship">Fellowship</a>
+                </div>
+                <div class="footer-links-column">
+                    <a href="/sponsor">Sponsor Us</a>
+                    <a href="https://calhacks-sierra.s3-us-west-2.amazonaws.com/coc.pdf" target="_blank"
+                        rel="noopener noreferrer">Code of Conduct</a>
+                    <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank"
+                        rel="noopener noreferrer">MLH
+                        Code of Conduct</a>
+                    <div>
+                        <a href="https://www.facebook.com/CalHacks/" target="_blank" rel="noopener noreferrer">
+                            <img class="connect-icon"
+                                src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/facebook.svg"
+                                style="display: none !important;">
+                        </a>
+                        <a href="https://twitter.com/CalHacks" target="_blank" rel="noopener noreferrer">
+                            <img class="connect-icon"
+                                src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/twitter.svg"
+                                style="display: none !important;">
+                        </a>
+                        <a href="https://www.instagram.com/calhacks.io/" target="_blank" rel="noopener noreferrer">
+                            <img class="connect-icon"
+                                src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/instagram.svg"
+                                style="display: none !important;">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-column"></div>
+            </div>
+            <div id="footer-tagline">
+                <h5>Made with ♡, by Cal Hacks</h5>
+            </div>
+        </div>
+        <div id="footer-background"></div>
+    </div>
+
+    <script>
+        const scrollToContent = function () {
+            document.getElementById('content').scrollIntoView({
+                behavior: 'smooth'
+            });
+        };
+
+        function contact() {
+            const name = document.getElementById('name-input').value;
+            const sender = document.getElementById('sender-input').value;
+            const company = document.getElementById('company-input').value;
+            const content = document.getElementById('content-input').value;
+            const recipient = 'sponsorship@calhacks.io';
+            const subject = 'Sponsorship Inquiry: ' + name + ' from ' + company;
+
+            grecaptcha.ready(function () {
+                grecaptcha
+                    .execute('6Lf1RNIUAAAAAI-VzP0tQ0BF8ckTpUw1F5ZUDOy7', {
+                        action: 'sponsor_form'
+                    })
+                    .then(function (token) {
+                        fetch('https://api.calhacks.io/static/contact', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                sender,
+                                content,
+                                recipient,
+                                subject,
+                                token
+                            })
+                        }).then((response) => {
+                            if (response.status !== 204) return;
+
+                            document.getElementById('name-input').value = '';
+                            document.getElementById('sender-input').value = '';
+                            document.getElementById('company-input').value = '';
+                            document.getElementById('content-input').value = '';
+
+                            document.getElementById('submit-input').classList.add('hide');
+                            document
+                                .getElementById('contact-confirmation')
+                                .classList.remove('hide');
+                        });
+                    });
+            });
+        }
+
+        function toggleMenu() {
+            let topnav = document.getElementById('topnav');
+            if (topnav.className === '') {
+                topnav.className += 'responsive';
+            } else {
+                topnav.className = '';
+            }
+        }
+    </script>
+
+    <div>
+        <div class="grecaptcha-badge" data-style="bottomright"
+            style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+            <div class="grecaptcha-logo"><iframe
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lf1RNIUAAAAAI-VzP0tQ0BF8ckTpUw1F5ZUDOy7&amp;co=aHR0cHM6Ly9jYWxoYWNrcy5pbzo0NDM.&amp;hl=en&amp;v=NMoy4HgGiLr5NAQaEQa2ho8X&amp;size=invisible&amp;cb=jw3daezh9zmm"
+                    width="256" height="60" role="presentation" name="a-qmzm71e2641l" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+            </div>
+            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+        </div><iframe style="display: none;"></iframe>
+    </div>
+</body>
+
+</html>
