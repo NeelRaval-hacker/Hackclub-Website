@@ -550,23 +550,6 @@ aside {
     gap: 16px;
     text-decoration: none;
 }
-
-.css-1eby7ae {
-    box-sizing: border-box;
-    min-width: 0px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    -webkit-box-align: center;
-    align-items: center;
-    color: inherit;
-    margin: 0px;
-    gap: 16px;
-    text-decoration: none;
-    color:orange;
-}
-
-
-
 .css-gh1imp {
     box-sizing: border-box;
     min-width: 0px;
@@ -612,28 +595,6 @@ css-1ttufz8 {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-/* css-1ttufz9 {
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    font-weight: 500;
-    line-height: 1.125;
-    -webkit-letter-spacing: 0.009em;
-    -moz-letter-spacing: 0.009em;
-    -ms-letter-spacing: 0.009em;
-    letter-spacing: 0.009em;
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: teal;
-} */
-
-
-
-
 
 * {
     box-sizing: border-box;
