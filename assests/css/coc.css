@@ -550,23 +550,6 @@ aside {
     gap: 16px;
     text-decoration: none;
 }
-
-.css-1eby7ae {
-    box-sizing: border-box;
-    min-width: 0px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    -webkit-box-align: center;
-    align-items: center;
-    color: inherit;
-    margin: 0px;
-    gap: 16px;
-    text-decoration: none;
-    color:orange;
-}
-
-
-
 .css-gh1imp {
     box-sizing: border-box;
     min-width: 0px;
@@ -612,28 +595,6 @@ css-1ttufz8 {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-/* css-1ttufz9 {
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    font-weight: 500;
-    line-height: 1.125;
-    -webkit-letter-spacing: 0.009em;
-    -moz-letter-spacing: 0.009em;
-    -ms-letter-spacing: 0.009em;
-    letter-spacing: 0.009em;
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: teal;
-} */
-
-
-
-
 
 * {
     box-sizing: border-box;
@@ -827,76 +788,8 @@ h2 {
 }
 #splash #splash-body #splash-img #splash-img-right {
   margin-bottom: 40%;
-  height: 20.00%;
+  height: 43.33%;
 }
-
-#content #about.content-section #invite{
-height: 87%;
-width: 80%; 
- 
-}
-@media only screen and (max-width: 850px) {
-  #content #about.content-section #invite{
-    width: 90%;
-    height: 65%;
-    text-align: center;
-  }
-}
-
-/* #content #about.content-section #invite-content{
-height: 50px;
-width: 50px;
-position: sticky;
-} */
-#content #about.content-section .css-1gjga9r {
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    text-align: center;
-    line-height: inherit;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    font-size: inherit;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: var(--theme-ui-colors-white,#ffffff);
-    background-color: var(--theme-ui-colors-primary,#ec3750);
-    border: 0;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.125);
-    font-family: inherit;
-    font-weight: 700;
-    -webkit-letter-spacing: 0.008em;
-    -moz-letter-spacing: 0.008em;
-    -ms-letter-spacing: 0.008em;
-    letter-spacing: 0.008em;
-    text-transform: uppercase;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-    line-height: 1.75;
-    border-radius: 99999px;
-    -webkit-transition: -webkit-transform 250ms ease-in-out,box-shadow 250ms ease-in-out;
-    -webkit-transition: transform 250ms ease-in-out,box-shadow 250ms ease-in-out;
-    transition: transform 0.125s ease-in-out 0s, box-shadow 0.125s ease-in-out 0s;
-    transition-property: transform, box-shadow;
-    transition-duration: 0.125s, 0.125s;
-    transition-timing-function: ease-in-out, ease-in-out;
-    transition-delay: 0s, 0s;
-    font-size: 21px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-image: radial-gradient( ellipse farthest-corner at top left, #9962ff, #4000ff);
-}
-
-
 #splash #splash-body #splash-content {
   max-width: 400px;
   color: #ff8c37;

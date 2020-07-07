@@ -1,88 +1,581 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content=" width = device-width, initial-scale = 1.0"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&amp;display=swap" rel="stylesheet">
-    <meta name = "description" content = "Hackclub VIT Chennai Student Chapter">
-    <meta name = "author" content = "Hackclub VIT Chennai">
-    <title>
-      Hackclub | VIT Chennai
-    </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel = "stylesheet" href="./assests/css/home.css">
-  </head>
-  <body data-gr-c-s-loaded="true">
-    <div id="splash">
-      <div id="topnav" class>
-        <div class="nav-page">
-          <a href="/" class="page active">Home</a>
-          <div class="nav-indicator active"></div>
-        </div>
-        <div class="navpage">
-          <a href="/hackathon" class="page">Hackathon</a>
-          <div class="nav-indicator"></div>
-        </div>
-        <div class="navpage">
-          <a href="/sponsor" class="page">Sponsor Us</a>
-          <div class="nav-indicator"></div>
-        </div>
-        <div class="navpage">
-          <a href="/contact" class="page">Contact</a>
-          <div class="nav-indicator"></div>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-          <i class="material-icons">menu</i>
-        </a>
+
+<head>
+  <!-- Sentry Error Monitoring -->
+  <!-- <script src="https://browser.sentry-cdn.com/5.14.1/bundle.min.js"
+    integrity="sha384-uNLty2kYRXkczv6MLytto1fP/VzNBKjYpUNIpNa3yvW0CYZrzJE4TyvUBDHtbMmq"
+    crossorigin="anonymous"></script>
+  <script>
+    Sentry.init({
+      dsn: 'https://49be4fdd0db3435884b9a5c33b20f5ab@sentry.io/2836115',
+      ignoreErrors: [
+        "Non-Error promise rejection captured with value: Timeout",
+        "TypeError: NetworkError when attempting to fetch resource.",
+        "Error: ResizeObserver loop limit exceeded",
+      ],
+    });
+  </script>
+
+  < Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-158603824-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158603824-3');
+  </script> -->
+
+  <link rel="icon" href="assests/output-onlinepngtools.png" type="image/icon type">
+
+  <link rel="stylesheet" href="assests/css/home.css">
+
+  <!-- Google Material Icons -->
+
+
+  <!-- Google Fonts: Muli -->
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- For responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&amp;display=swap" rel="stylesheet">
+  <title>Hack Club|VIT Chennai</title>
+  <style></style>
+  <!-- <script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js"></script> -->
+</head>
+
+<body data-gr-c-s-loaded="true" style="background-color: #fae0cd;" oncontextmenu="return false"
+onkeydown="return false;" onmousedown="return false;" >
+
+  <!-- Splash (top 100vh of page) -->
+  <div id="splash">
+
+    <a href="home.html"><img id="logo" src="assests/output-onlinepngtools.png"></a>
+
+    <!-- Responsive navbar -->
+    <div id="topnav" class="">
+      <div class="nav-page">
+
+        <a href="home.html" class="page active">Home</a>
+        <div class="nav-indicator active"></div>
       </div>
-      <div id="mobile-bar"></div>
-      <!-- <a id="mlh-trust-badge" style="display: block; max-width: 100px; min-width: 60px;position:fixed; right:50px; top:0;width: 10%;z-index:10000" href> 
-         -->
-      <div id="splash-body">
-        <div id="splash-img">
-          <img id="splash-img-left" src="">
-          <img id="splash-img-right" src="">
-        </div>
-        <div id="splash-content">
-          <h2>Stuck at Home?</h2>
-          <br>
-          <!-- <p>
-            "Due to COVID-19, communities are severely affected!
-            
-            "
-          </pp>> -->
-          <h2>Join Hack Club.</h2>
-        </div>
+      <!-- <div class="nav-page">
+        <a href="/hackathon" class="page">Hackathon</a>
+        <div class="nav-indicator"></div>
+      </div> -->
+      <div class="nav-page">
+        <a href="workshops.html" class="page">Hack Start</a>
+        <div class="nav-indicator"></div>
       </div>
-      <i id="down-indicator" class="material-icons" onclick="scrollToContent();">
-        keyboard_arrow_down
-      </i>
-      <div id="splash-background"></div>
+      <!-- <div class="nav-page">
+        <a href="/fellowship" class="page">Fellowship</a>
+        <div class="nav-indicator"></div>
+      </div> -->
+      <div class="nav-page">
+        <a href="sponsor.html" class="page">Sponsor Us</a>
+        <div class="nav-indicator"></div>
+      </div>
+      <div class="nav-page">
+        <a href="contact.html" class="page">Contact</a>
+        <div class="nav-indicator"></div>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="material-icons">menu</i>
+      </a>
     </div>
 
-    
+    <!-- Top Bar -->
+    <div id="mobile-bar"></div>
 
+    <!-- MLH Badge -->
+    <!-- <a id="mlh-trust-badge"
+      style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+      href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2020-season&amp;utm_content=white"
+      target="_blank" rel="noopener noreferrer"><img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg"
+        alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a> -->
 
-          
-
-           
-      
-
-
-
-        
-      </divdiv>>
+    <!-- Splash body -->
+    <div id="splash-body">
+      <div id="splash-img">
+        <img id="splash-img-left" src="assests/output-onlinepngtools.png">
+        <!-- <img id="splash-img-right"
+          src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/cal_hacks.png"> -->
       </div>
+      <div id="splash-content">
+        <h1>Stuck at Home?</h1>
+        <br>
+        <h2>Join Hack Club.</h2>
+        <p>Member applications are now open.
+          Apply Now!</p>
+        <button class="dark" onclick="window.open('https://hackclubvitc.typeform.com/to/PVm2YK71', '_blank')">Fill the
+          form</button>
+        <h3 id="notification-confirmation" class="hide">Thanks for subscribing :)</h3>
+      </div>
+    </div>
+
+    <!-- Down indicator -->
+    <i id="down-indicator" class="material-icons" onclick="scrollToContent();">
+      keyboard_arrow_down
+    </i>
+
+    <!-- Background -->
+    <div id="splash-background"></div>
+    <!-- <video autoplay muted loop id="splash-background">
+        <source
+          src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/fa.mp4"
+          type="video/mp4"
+        />
+      </video> -->
+  </div>
+
+
+
+
+  <div id="content">
+    <div id="about" class="content-section">
+      <!-- <div class="content-section-indicator"></div> -->
+      <h1>Upcoming Event!</h1>
+      <br>
+      <br>
+      <br>
+      <!-- <div id="about-content" class="content">
+          <b><h2>
+            <p id="invite-content">
+              Where<span>&mdash;</span> Youtube<br>
+              When<span>&mdash;</span> 9 July,2020(2:30 pm onwards)
+            </p>
+          </h2></b>
       
-        
+      </div> -->
+      <img id="invite" src="assests/invite.png" >
+      <br>
+      <br>
+      <a href="https://bit.ly/hackclublaunch" class="css-1gjga9r">Join the launch</a>
+      <br>
+      <br>
+      <br>
+
+      <h1>Our ongoing initiatives</h1>
+      <h1>
+        <span class="css-1imhxhw">Summer of Making.<span>&lowast;</span></span>
+      </h1>
+      <div id="about-content" class="content">
+        <p>It<span>&#39;</span>s not an event or program. It<span>&#39;</span>s a theme for the summer, a challenge to
+          every teenager reading this: What will you
+          make?
+
+          To suppport you, we<span>&#39;</span>re distributing $50,000 in free electronics (thanks GitHub!) & building
+          Snapchat streaks for
+          coding<span>&mdash;</span>but really Summer of Making is about you. If this will be the best summer ever,
+          it<span>&#39;</span>ll be because of what you
+          choose to hack on & learn from.</p>
+
+      </div>
+      <br>
+      <a href="https://summer.hackclub.com/" class="css-1gjga9w">Join the summer</a>
+    </div>
+    <section class="css-vjsg8x">
+      <div class="css-7l1bft">
+        <aside class="css-vurnku">
+          <h2 class="css-1ponkc"><span class="css-teutx1">Weekly&nbsp;AMAs</span> with the most interesting people in
+            tech.
+          </h2><a href="https://www.youtube.com/watch?v=riru9OzScwk&amp;t=545s" class="css-zz1ku7">Watch our Elon Musk
+            AMA</a>
+          <div class="css-ju71sc"><a href="https://events.hackclub.com/ama-with-guillermo-rauch" target="_blank"
+              class="css-1eby7ad">
+              <div class="css-gh1imp">
+                <div class="css-1jwr9a6">May</div>
+                <div class="css-8x4zw6">14</div>
+              </div>
+              <p class="css-1ttufz8">Guillermo Rauch</p>
+            </a><a href="https://events.hackclub.com/ama-with-audrey-tang" target="_blank" class="css-1eby7ad">
+              <div class="css-gh1imp">
+                <div class="css-1jwr9a6">June</div>
+                <div class="css-8x4zw6">4</div>
+              </div>
+              <p class="css-1ttufz8">Audrey Tang</p>
+            </a><a href="https://events.hackclub.com/ama-with-patrick-collison" target="_blank" class="css-1eby7ad">
+              <div class="css-gh1imp">
+                <div class="css-1jwr9a6">June</div>
+                <div class="css-8x4zw6">11</div>
+              </div>
+              <p class="css-1ttufz8">Patrick Collison</p>
+            </a><a href="https://events.hackclub.com/ama-with-ladyada" target="_blank" class="css-1eby7ad">
+              <div class="css-gh1imp">
+                <div class="css-1jwr9a6">June</div>
+                <div class="css-8x4zw6">25</div>
+              </div>
+              <p class="css-1ttufz8">ladyada</p>
+            </a>
+            </a><a href="https://events.hackclub.com/ama-with-dylan-field" target="_blank" class="css-1eby7ae">
+              <div class="css-gh1imp">
+                <div class="css-1jwr9a6">July</div>
+                <div class="css-8x4zw6">10</div>
+              </div>
+              <p class="css-1ttufz8">Dylan Field</p>
+            </a>
+            </a><a href="https://events.hackclub.com/ama-with-tommy-devoss" target="_blank" class="css-1eby7ae">
+              <div class="css-gh1imp">
+                <div class="css-1jwr9a6">July</div>
+                <div class="css-8x4zw6">24</div>
+              </div>
+              <p class="css-1ttufz8">Tommy DeVoss</p>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+
+    </section>
+
+    <br>
+    <br>
+    <h1>
+      <span class="css-1imhxhw">Alexa Skills Competition.<span>&lowast;</span></span>
+    </h1>
+    <div id="about-content" class="content">
+      <p>It's time for you to unleash the maker skills.<br>
+        We challenge you to show us some of the epic stuff you can do with Amazon Alexa.
+        Submit your idea and stand a chance to win a brand new Amazon echo dot.<br>
+        (We'll be sending out an echo dot to the best project idea.)
+      </p><br>
+      <a href="https://summer.hackclub.com/" class="css-1gjga9w">Apply</a>
+
+    </div>
+    <br>
+
+    <!-- <div id="about" class="content-section">
+      <div class="content-section-indicator"></div>
+      <h2>Alexa Skills Competition</h2>
+      <div id="about-content" class="content">
+        <p>
+          We're a nonprofit organization composed of students passionate about
+          fostering a culture of hacking, entrepreneurship, and social good
+          via the empowerment of technology. <br><br>
+    
+          Our mission is to empower others with technology to create solutions
+          to better the world. <br><br>
+    
+          Thanks so much for stopping by to say hi!
+        </p> -->
+    <!-- <div id="team-image-crop">
+              <img id="team-image" src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/images/team.jpg">
+            </div> -->
+    <!-- </div>
+    </div> -->
 
 
-      
 
 
-  </body>
+
+
+    <!-- <div id="hacknow"> -->
+
+    <!-- <img id="hacknow-img-left"
+        src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/hacknow/branding/illustration1.png"> -->
+    <!-- <div id="hacknow-content">
+        <h2>Our upcoming initiative</h2>
+        <img id="hacknow-logo"
+          src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/hacknow/branding/logo-flat.png">
+        <p>A 36-hour, virtual hackathon to foster innovative and technical solutions to challenges faced around
+          the COVID-19 pandemic.</p>
+       <button class="dark" onclick="window.open('https://hacknow.calhacks.io', '_blank')">Visit Website</button> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <br>
+    <br>
+    <div id="about" class="content-section">
+      <div class="content-section-indicator"></div>
+      <h2>About Us</h2>
+      <div id="about-content" class="content">
+        <h4>
+          <p>
+            A group of motivated students who wish to create an environment for anyone who wishes to begin with tech
+            projects.<br>
+            We believe that there is no task impossible and no target unachievable. Remember, together everyone achieves
+            more. We
+            are drawn to the concept that everyone has a role in development and knowledge is a resource that must be
+            shared to
+            grow.
+            Therefore, we aim to nurture this community and use individual expertise to the development of the overall
+            team and its
+            members.
+            Our major goal is creating an ecosystem where developers come to seek help for their projects and our
+            platform will
+            connect like<span>&mdash;</span>minded individuals to collaborate and successfully achieve at what they
+            intend to do.<br>
+            Hack Club gives you a worldwide community of thousands of other young makers to talk to.
+            We<span>&#39;</span>re artists, writers,
+            engineers, tinkerers, campers, filmmakers, volunteers. We make things. We help one another. We have fun.
+            Join us to be a
+            part of this experience.<br>
+          </p>
+        </h4>
+        <!-- <div id="team-image-crop">
+          <img id="team-image" src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/images/team.jpg">
+        </div> -->
+      </div>
+    </div>
+
+    <!-- <div id="initiatives" class="content-section">
+      <div class="content-section-indicator"></div>
+      <h2>Initiatives</h2>
+      <div id="initiatives-content" class="content">
+        <div id="hackathon-desc">
+          <a href="/hackathon">
+            <h3>Hackathon</h3>
+          </a>
+          <p>
+            Our annual hackathon, hosted at UC Berkeley's beautiful campus, is
+            where the technology of the future is born.
+          </p>
+        </div>
+        <div id="cubstart-desc">
+          <a href="/cubstart">
+            <h3>Cubstart</h3>
+          </a>
+          <p>
+            A program for new hackers designed to make the hackathon
+            experience less intimidating but more accessible!
+          </p>
+        </div>
+        <div id="fellowship-desc">
+          <a href="/fellowship">
+            <h3>Fellowship</h3>
+          </a>
+          <p>
+            A program that hosts hackathon teams after the event to continue
+            building and growing their projects to where they want to take it
+            next.
+          </p>
+        </div>
+        <a id="hackathon-img" href="/hackathon">
+          <div class="initiative-image-container">
+            <img src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/hackanile.png">
+            <div class="circle"></div>
+          </div>
+        </a>
+        <a id="cubstart-img" href="/cubstart">
+          <div class="initiative-image-container">
+            <img src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/cubstart.png">
+            <div class="circle"></div>
+          </div>
+        </a>
+        <a id="fellowship-img" href="/fellowship">
+          <div class="initiative-image-container">
+            <img src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/branding/fellowship.png">
+            <div class="circle"></div>
+          </div>
+        </a>
+      </div>
+    </div> -->
+
+    <div id="team" class="content-section">
+      <div class="content-section-indicator"></div>
+      <h2>Sponsors</h2>
+      <div id="team-content" class="content">
+        <div class="team-member">
+          <a href="https://codingblocks.com/">
+            <img src="assests/cblogo.png">
+          </a>
+          <h4>Coding Blocks</h4>
+        </div>
+      </div>
+      <br>
+      <br>
+      <h4 style="margin-top: 2rem; text-align: center"><span>&lowast;</span> You need to be a member of Hack Club VIT
+        Chennai.</h4>
+      <h4 style="margin-top: 2rem; text-align: center">Have a question for us? Email team@hackclub.tech</h4>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="footer">
+    <div id="footer-content">
+      <img id="footer-logo" src="assests/output-onlinepngtools.png">
+      <div class="footer-links">
+        <div class="footer-links-column">
+          <a>
+            <h3>Hack Club</h3>
+          </a>
+          <!-- <a href="/apply">Apply</a> -->
+          <a href="philosophy.html">Philosophy</a>
+          <!-- <a href="/Team">Team</a> -->
+          <a href="https://hackclub.com/slack/">Community</a>
+        </div>
+        <div class="footer-links-column">
+          <a>
+            <h3>Resources</h3>
+          </a>
+          <a href="sponsor.html">Sponsor Us</a>
+          <a href="coc.html" target="_blank">Hack Club Code of Conduct</a>
+          <a href="workshops.html" target="_blank">Hack Start</a>
+          <!-- <a href="/workshops" target="_blank">Workshops</a> -->
+          <div>
+            <a target="_self" rel="noopener" href="https://hackclub.com/slack/" title="Hack Club on slack-fill"
+              class="css-lrwjdh"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="slack-fill" viewBox="0 0 32 32"
+                preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 4c10 0 12 2 12 12s-2 12-12 12S4 26 4 16 6 4 16 4zm-2.746 4.122a1.605 1.605 0 0 1 1.745.347 1.6 1.6 0 0 1 .468 1.131v1.6h-1.6a1.603 1.603 0 0 1-1.48-2.212 1.598 1.598 0 0 1 .867-.866zM9.6 12.267h4.267a1.604 1.604 0 0 1 1.478.988A1.596 1.596 0 0 1 15 14.997a1.602 1.602 0 0 1-1.132.47H9.6a1.605 1.605 0 0 1-1.479-.989 1.595 1.595 0 0 1 .347-1.742 1.601 1.601 0 0 1 1.132-.47zm14.279.988a1.596 1.596 0 0 1-.347 1.742 1.6 1.6 0 0 1-1.132.47h-1.6v-1.6a1.596 1.596 0 0 1 .987-1.478 1.605 1.605 0 0 1 1.745.347c.149.148.266.325.347.519zM19.733 9.6v4.267a1.594 1.594 0 0 1-.987 1.477 1.605 1.605 0 0 1-1.226 0 1.602 1.602 0 0 1-.987-1.477V9.6a1.596 1.596 0 0 1 .987-1.478 1.605 1.605 0 0 1 1.745.347 1.598 1.598 0 0 1 .468 1.131zm-1.6 14.4a1.603 1.603 0 0 0 1.6-1.6 1.595 1.595 0 0 0-.987-1.478 1.605 1.605 0 0 0-.613-.122h-1.6v1.6a1.597 1.597 0 0 0 1.6 1.6zm0-4.267H22.4a1.605 1.605 0 0 0 1.479-.988 1.596 1.596 0 0 0-.347-1.742 1.6 1.6 0 0 0-1.132-.47h-4.267a1.605 1.605 0 0 0-1.478.989A1.596 1.596 0 0 0 17 19.264a1.602 1.602 0 0 0 1.132.47zm-10.012-.988a1.596 1.596 0 0 1 .347-1.742 1.601 1.601 0 0 1 1.132-.47h1.6v1.6a1.596 1.596 0 0 1-.987 1.478 1.605 1.605 0 0 1-1.745-.347 1.597 1.597 0 0 1-.347-.519zm4.146 3.655v-4.267a1.593 1.593 0 0 1 .987-1.477 1.603 1.603 0 0 1 1.745.347 1.6 1.6 0 0 1 .468 1.13V22.4a1.597 1.597 0 0 1-1.6 1.6 1.603 1.603 0 0 1-1.6-1.6z">
+                </path>
+              </svg></a>
+            <a target="_blank" rel="noopener" href="https://github.com/HackclubVIT" title="Hack Club on github"
+              class="css-lrwjdh"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="github" viewBox="0 0 32 32"
+                preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
+                <g>
+                  <path
+                    d="M18.837,27.966c8.342,-0.241 9.163,-1.997 9.163,-11.966c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,9.995 0.826,11.734 9.228,11.968c0.073,-0.091 0.1,-0.205 0.1,-0.321c0,-0.25 -0.01,-2.816 -0.015,-3.699c-3.037,0.639 -3.678,-1.419 -3.678,-1.419c-0.497,-1.222 -1.213,-1.548 -1.213,-1.548c-0.991,-0.656 0.075,-0.643 0.075,-0.643c1.096,0.075 1.673,1.091 1.673,1.091c0.974,1.617 2.556,1.15 3.178,0.879c0.099,-0.683 0.381,-1.15 0.693,-1.414c-2.425,-0.267 -4.974,-1.175 -4.974,-5.23c0,-1.155 0.426,-2.099 1.124,-2.839c-0.113,-0.268 -0.487,-1.344 0.107,-2.8c0,0 0.917,-0.285 3.003,1.084c0.871,-0.235 1.805,-0.352 2.734,-0.356c0.927,0.004 1.861,0.121 2.734,0.356c2.085,-1.369 3,-1.084 3,-1.084c0.596,1.456 0.221,2.532 0.108,2.8c0.7,0.74 1.123,1.684 1.123,2.839c0,4.065 -2.553,4.96 -4.986,5.221c0.392,0.327 0.741,0.973 0.741,1.96c0,0.946 -0.006,2.619 -0.01,3.728c-0.002,0.549 -0.003,0.959 -0.003,1.074c0,0.109 0.029,0.224 0.095,0.319Z">
+                  </path>
+                </g>
+              </svg></a>
+            <!-- <svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"
+              xmlns="http://www.w3.org/2000/svg" aria-label="facebook" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet"
+              fill="currentColor" width="32" height="32">
+              <g>
+                <path
+                  d="M19.491,27.944c7.731,-0.319 8.509,-2.242 8.509,-11.944c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,10.985 0.997,11.997 11.956,12l0,-7.667l-2.956,0l0,-3.377l2.956,0l0,-2.491c0,-2.891 1.789,-4.465 4.403,-4.465c1.251,0 2.327,0.092 2.641,0.133l0,3.021l-1.813,0.001c-1.421,0 -1.696,0.666 -1.696,1.644l0,2.157l3.39,0l-0.442,3.377l-2.948,0l0,7.611Z">
+                </path>
+              </g>
+            </svg> -->
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/hackclubvitc"
+              title="Hack Club on instagram" class="css-lrwjdh"><svg fill-rule="evenodd" clip-rule="evenodd"
+                stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg"
+                aria-label="instagram" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor"
+                width="32" height="32">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 6c5.1 0 7.247.575 8.336 1.664C25.425 8.753 26 10.9 26 16s-.575 7.247-1.664 8.336C23.247 25.425 21.1 26 16 26s-7.247-.575-8.336-1.664C6.575 23.247 6 21.1 6 16s.575-7.247 1.664-8.336C8.753 6.575 10.9 6 16 6zm0-2c10 0 12 2 12 12s-2 12-12 12S4 26 4 16 6 4 16 4z">
+                  </path>
+                  <path
+                    d="M16 9.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.845-10.405a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z">
+                  </path>
+                </g>
+              </svg></a>
+            <a target="_blank" rel="noopener" href="mailto:team@hackclub.tech" title="Hack Club on email"
+              class="css-lrwjdh"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="email" viewBox="0 0 32 32"
+                preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
+                <g>
+                  <path
+                    d="M25.709,21.048c0.241,-1.212 0.291,-2.792 0.291,-5.048c0,-2.256 -0.05,-3.836 -0.291,-5.048c-0.216,-1.11 -0.533,-1.577 -0.864,-1.853c-0.384,-0.32 -1.094,-0.641 -2.597,-0.844c-1.531,-0.209 -3.522,-0.255 -6.248,-0.255c-2.725,0 -4.717,0.046 -6.248,0.255c-1.503,0.203 -2.213,0.524 -2.597,0.844c-0.331,0.276 -0.648,0.743 -0.864,1.853c-0.241,1.212 -0.291,2.792 -0.291,5.048c0,2.256 0.05,3.836 0.291,5.048c0.216,1.11 0.533,1.577 0.864,1.853c0.384,0.32 1.094,0.641 2.597,0.843c1.531,0.21 3.523,0.256 6.248,0.256c2.726,0 4.717,-0.046 6.248,-0.256c1.503,-0.202 2.213,-0.523 2.597,-0.843c0.331,-0.276 0.648,-0.743 0.864,-1.853Zm-9.709,4.952c11,0 12,-0.833 12,-10c0,-9.167 -1,-10 -12,-10c-11,0 -12,0.833 -12,10c0,9.167 1,10 12,10Zm-8.651,-14.774c0.411,-0.344 1.023,-0.289 1.366,0.124c1.335,1.601 5.617,5.318 7.285,6.592c1.696,-1.296 5.931,-4.963 7.285,-6.592c0.343,-0.413 0.955,-0.468 1.366,-0.124c0.412,0.344 0.467,0.957 0.124,1.37c-0.695,0.838 -2.02,2.129 -3.429,3.404c1.409,1.275 2.734,2.566 3.429,3.404c0.343,0.412 0.288,1.026 -0.124,1.37c-0.411,0.344 -1.023,0.289 -1.366,-0.124c-0.662,-0.798 -2.015,-2.083 -3.422,-3.339c-1.102,0.95 -2.137,1.789 -2.841,2.291c-0.302,0.213 -0.644,0.398 -1.022,0.398c-0.378,0 -0.72,-0.185 -1.021,-0.398c-0.691,-0.492 -1.728,-1.335 -2.835,-2.292c-1.414,1.264 -2.775,2.556 -3.429,3.34c-0.343,0.413 -0.955,0.468 -1.366,0.124c-0.411,-0.344 -0.467,-0.957 -0.124,-1.37l0.001,-0.001c0.683,-0.822 2.018,-2.119 3.436,-3.403c-1.418,-1.284 -2.753,-2.582 -3.436,-3.403l-0.001,-0.001c-0.343,-0.413 -0.287,-1.026 0.124,-1.37Z">
+                  </path>
+                </g>
+              </svg>
+            </a>
+
+
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-column"></div>
+      </div>
+      <div id="footer-tagline">
+        <h5>Made with <span>&#9825;</span>, by Students of Hack Club</h5>
+      </div>
+    </div>
+    <div id="footer-background"></div>
+  </div>
+  <!-- <div class="popup close" id="hacknow-popup">
+    <img class="popup-image"
+      src="https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/hacknow/branding/footer-logo.png"
+      onclick="window.open('https://hacknow.calhacks.io', '_blank');" />
+    <div class="popup-content" onclick="window.open('https://hacknow.calhacks.io', '_blank');">
+      <h3>hack:now</h3>
+      <p>We<span>&#39;</span>re hosting an all-online hackathon from April 24 to 26 to tackle some of today<span>&#39;</span>s most pressing problems!
+        Click
+        to learn more :)</p>
+    </div>
+    <i class="material-icons" onclick="closePopup();">close</i>
+  </div> -->
+
+  <script>
+    // function subscribe() {
+    //   const email = document.getElementById('email-input').value;
+
+    //   fetch('https://api.calhacks.io/static/subscribe', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({ email })
+    //   }).then((response) => {
+    //     if (response.status !== 204) return;
+
+    //     document.getElementById('email-input').value = '';
+
+    //     document
+    //       .getElementById('notification-confirmation')
+    //       .classList.remove('hide');
+    //     document.getElementById('notification-input').classList.add('hide');
+    //   });
+    // }
+
+    // const closePopup = function () {
+    //   document.getElementById('hacknow-popup').classList.add('close')
+    // }
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   setTimeout(() => {
+    //     document.getElementById('hacknow-popup').classList.remove('close')
+    //   }, 2000)
+    // }, false);
+
+    const scrollToContent = function () {
+      document.getElementById('content').scrollIntoView({
+        behavior: 'smooth'
+      });
+    };
+
+    // const actives = [
+    //   {
+    //     name: 'Alex',
+    //     url:
+    //       'https://calhacks-sierra.s3-us-west-2.amazonaws.com/assets/profile_images/alex.jpg'
+    //   },
+    // ];
+
+    // since we have duplicate names sometimes, compare
+    // url if same name because filename is different
+    const sorted = actives.sort((a, b) =>
+      a.name === b.name
+        ? a.url.localeCompare(b.url)
+        : a.name.localeCompare(b.name)
+    );
+    for (let director of sorted) {
+      const div = document.createElement('div');
+      div.className = 'team-member';
+
+      const img = document.createElement('img');
+      img.setAttribute('src', director.url);
+      div.appendChild(img);
+
+      const h4 = document.createElement('h4');
+      h4.innerHTML = director.name;
+      div.appendChild(h4);
+
+      document.getElementById('team-content').appendChild(div);
+    }
+
+    function toggleMenu() {
+      let topnav = document.getElementById('topnav');
+      if (topnav.className === '') {
+        topnav.className += 'responsive';
+      } else {
+        topnav.className = '';
+      }
+    }
+  </script>
+
+
+
+</body>
+
 </html>
