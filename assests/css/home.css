@@ -842,7 +842,14 @@ width: 80%;
     text-align: center;
   }
 }
-
+#event-countdown {
+    height: auto;
+    text-align: center;
+    background-image: url(../../images/tile.jpg);
+    background-repeat: repeat;
+    background-blend-mode: lighten;
+    padding: 30px 0px 0px 0px;
+}
 /* #content #about.content-section #invite-content{
 height: 50px;
 width: 50px;
